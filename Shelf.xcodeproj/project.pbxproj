@@ -14,6 +14,9 @@
 		8F9A8D1F1CA431480040CCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A8D1D1CA431480040CCFD /* LaunchScreen.storyboard */; };
 		8F9A8D2A1CA431480040CCFD /* ShelfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A8D291CA431480040CCFD /* ShelfTests.swift */; };
 		8F9A8D351CA431490040CCFD /* ShelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A8D341CA431490040CCFD /* ShelfUITests.swift */; };
+		8F9A8D491CA432B40040CCFD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A8D481CA432B40040CCFD /* ShareViewController.swift */; };
+		8F9A8D4C1CA432B40040CCFD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A8D4A1CA432B40040CCFD /* MainInterface.storyboard */; };
+		8F9A8D501CA432B40040CCFD /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F9A8D461CA432B40040CCFD /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 8F9A8D101CA431480040CCFD;
 			remoteInfo = Shelf;
 		};
+		8F9A8D4E1CA432B40040CCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F9A8D091CA431480040CCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F9A8D451CA432B40040CCFD;
+			remoteInfo = Share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F9A8D541CA432B50040CCFD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F9A8D501CA432B40040CCFD /* Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F9A8D111CA431480040CCFD /* Shelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,10 @@
 		8F9A8D301CA431480040CCFD /* ShelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9A8D341CA431490040CCFD /* ShelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfUITests.swift; sourceTree = "<group>"; };
 		8F9A8D361CA431490040CCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9A8D461CA432B40040CCFD /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9A8D481CA432B40040CCFD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8F9A8D4B1CA432B40040CCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8F9A8D4D1CA432B40040CCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F9A8D431CA432B40040CCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +115,7 @@
 				8F9A8D131CA431480040CCFD /* Shelf */,
 				8F9A8D281CA431480040CCFD /* ShelfTests */,
 				8F9A8D331CA431480040CCFD /* ShelfUITests */,
+				8F9A8D471CA432B40040CCFD /* Share */,
 				8F9A8D121CA431480040CCFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +126,7 @@
 				8F9A8D111CA431480040CCFD /* Shelf.app */,
 				8F9A8D251CA431480040CCFD /* ShelfTests.xctest */,
 				8F9A8D301CA431480040CCFD /* ShelfUITests.xctest */,
+				8F9A8D461CA432B40040CCFD /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +162,16 @@
 			path = ShelfUITests;
 			sourceTree = "<group>";
 		};
+		8F9A8D471CA432B40040CCFD /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A8D481CA432B40040CCFD /* ShareViewController.swift */,
+				8F9A8D4A1CA432B40040CCFD /* MainInterface.storyboard */,
+				8F9A8D4D1CA432B40040CCFD /* Info.plist */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +182,12 @@
 				8F9A8D0D1CA431480040CCFD /* Sources */,
 				8F9A8D0E1CA431480040CCFD /* Frameworks */,
 				8F9A8D0F1CA431480040CCFD /* Resources */,
+				8F9A8D541CA432B50040CCFD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F9A8D4F1CA432B40040CCFD /* PBXTargetDependency */,
 			);
 			name = Shelf;
 			productName = Shelf;
@@ -181,6 +230,23 @@
 			productReference = 8F9A8D301CA431480040CCFD /* ShelfUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8F9A8D451CA432B40040CCFD /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9A8D531CA432B50040CCFD /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				8F9A8D421CA432B40040CCFD /* Sources */,
+				8F9A8D431CA432B40040CCFD /* Frameworks */,
+				8F9A8D441CA432B40040CCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 8F9A8D461CA432B40040CCFD /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +268,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 8F9A8D101CA431480040CCFD;
 					};
+					8F9A8D451CA432B40040CCFD = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 8F9A8D0C1CA431480040CCFD /* Build configuration list for PBXProject "Shelf" */;
@@ -220,6 +289,7 @@
 				8F9A8D101CA431480040CCFD /* Shelf */,
 				8F9A8D241CA431480040CCFD /* ShelfTests */,
 				8F9A8D2F1CA431480040CCFD /* ShelfUITests */,
+				8F9A8D451CA432B40040CCFD /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +316,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9A8D441CA432B40040CCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9A8D4C1CA432B40040CCFD /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F9A8D421CA432B40040CCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9A8D491CA432B40040CCFD /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +375,11 @@
 			isa = PBXTargetDependency;
 			target = 8F9A8D101CA431480040CCFD /* Shelf */;
 			targetProxy = 8F9A8D311CA431480040CCFD /* PBXContainerItemProxy */;
+		};
+		8F9A8D4F1CA432B40040CCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F9A8D451CA432B40040CCFD /* Share */;
+			targetProxy = 8F9A8D4E1CA432B40040CCFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +398,14 @@
 				8F9A8D1E1CA431480040CCFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8F9A8D4A1CA432B40040CCFD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F9A8D4B1CA432B40040CCFD /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Shelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koganepj.Shelf;
@@ -408,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Shelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koganepj.Shelf;
@@ -463,6 +564,28 @@
 			};
 			name = Release;
 		};
+		8F9A8D511CA432B50040CCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koganepj.Shelf.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8F9A8D521CA432B50040CCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koganepj.Shelf.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +605,7 @@
 				8F9A8D3B1CA431490040CCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9A8D3C1CA431490040CCFD /* Build configuration list for PBXNativeTarget "ShelfTests" */ = {
 			isa = XCConfigurationList;
@@ -490,12 +614,22 @@
 				8F9A8D3E1CA431490040CCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9A8D3F1CA431490040CCFD /* Build configuration list for PBXNativeTarget "ShelfUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F9A8D401CA431490040CCFD /* Debug */,
 				8F9A8D411CA431490040CCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F9A8D531CA432B50040CCFD /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9A8D511CA432B50040CCFD /* Debug */,
+				8F9A8D521CA432B50040CCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
